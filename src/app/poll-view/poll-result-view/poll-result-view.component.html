@@ -1,0 +1,17 @@
+<md-card class="main-view">
+   <md-card-title>
+     {{ (poll | async)?.name }}
+   </md-card-title>   
+   <md-card-subtitle>By {{(poll | async)?.author}}</md-card-subtitle>
+   <md-card-content>
+    <div class="option-view">
+      <div class="option" *ngFor="let option of (poll | async)?.options; let i = index">
+        {{option.value}} {{option.score}} Votes ({{option.score/total*100 | number:'1.0-2'}}%)
+        <md-progress-bar color="accent" value="{{option.score/total*100}}"></md-progress-bar>
+      </div>
+    </div>
+   </md-card-content>
+  <md-card-actions>
+    <button md-button color="accent" (click)="exportCSV()">EXPORT .CSV</button>
+  </md-card-actions>
+</md-card>

@@ -1,0 +1,10 @@
+.option md-progress-bar {
+  width: 100%;
+  margin-bottom: 10px
+}
+
+.main-view {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px
+}
