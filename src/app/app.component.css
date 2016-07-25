@@ -2,3 +2,8 @@
   width: 80%;
   margin: 40px auto;
 }
+
+.content {
+  background: url(rushrhees.jpg);
+  background-size: cover;
+}
