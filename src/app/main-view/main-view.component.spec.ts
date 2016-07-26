@@ -10,11 +10,11 @@ import {
   async, inject
 } from '@angular/core/testing';
 
-import { PollVoteViewComponent } from './poll-vote-view.component';
+import { MainViewComponent } from './main-view.component';
 
-// describe('Component: PollVoteView', () => {
+// describe('Component: MainView', () => {
 //   it('should create an instance', () => {
-//     let component = new PollVoteViewComponent();
+//     let component = new MainViewComponent();
 //     expect(component).toBeTruthy();
 //   });
 // });

@@ -1,0 +1,26 @@
+.btn-search {
+  color: white;
+  background-color: mediumseagreen;
+  float: right;
+}
+.ipt-search {
+  width: 70%;
+}
+
+.input-warning {
+  color: red;
+}
+
+.result-view {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.btn-submit {
+  color: white;
+  background-color: mediumseagreen;
+  float: right;
+}
+.ipt-email {
+  width: 70%;
+}

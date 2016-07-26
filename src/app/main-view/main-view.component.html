@@ -1,0 +1,33 @@
+<div [hidden]="hideSearch">
+  <md-input placeholder="Search" class="ipt-search" [dividerColor]="properSearch()" [(ngModel)]="searchString">
+    <md-hint align="end">(CRN, Name, Category)</md-hint>
+    <md-hint class="input-warning" *ngIf="properSearch() == 'warn'" align="start">Search should be at least 3 characters</md-hint>
+  </md-input>
+  <button md-raised-button class="btn-search" [disabled]="properSearch() == 'warn'" (click)="search(searchString)">Search</button>
+</div>
+<div [hidden]="hideResults">
+  <md-grid-list cols="7" rowHeight="30px">
+    <md-grid-tile>CRN</md-grid-tile>
+    <md-grid-tile>Course</md-grid-tile>
+    <md-grid-tile colspan="4">Name</md-grid-tile>
+    <md-grid-tile>Action</md-grid-tile>
+  </md-grid-list>
+  <div class="result-view">
+    <md-grid-list cols="7" *ngFor="let course of result" rowHeight="30px">
+      <md-grid-tile>{{course.crn}}</md-grid-tile>
+      <md-grid-tile>{{course.course}}</md-grid-tile>
+      <md-grid-tile colspan="4">{{course.title}}</md-grid-tile>
+      <md-grid-tile>
+        <button md-icon-button color="primary" (click)="selectItem(course)"><i class="material-icons">trending_flat</i></button>
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+</div>
+<div [hidden]="hideEmail">
+  <md-input placeholder="Email" type="email" class="ipt-email" [(ngModel)]="userEmail">
+  </md-input>
+  <button md-raised-button (click)="subscribeItem()" class="btn-submit">Sign Up</button>
+</div>
+<div [hidden]="hideSuccess">
+  You've successfully registered!
+</div>

@@ -25,10 +25,10 @@ bootstrap(AppComponent, [
   HTTP_PROVIDERS,
   FIREBASE_PROVIDERS,
   defaultFirebase({
-    apiKey: "AIzaSyB8UKkBLQUxJCZOn4Y9K4GbkSir97ftfnY",
-    authDomain: "droppoll-6e9ae.firebaseapp.com",
-    databaseURL: "https://droppoll-6e9ae.firebaseio.com",
-    storageBucket: "droppoll-6e9ae.appspot.com",
+    apiKey: "AIzaSyDJplHLR1-jfcBB7_KyvgJ8MXawdG1Kl9E",
+    authDomain: "ur-coursesniper-e2a0d.firebaseapp.com",
+    databaseURL: "https://ur-coursesniper-e2a0d.firebaseio.com",
+    storageBucket: "",
   }),
   // firebaseAuthConfig({
   //   provider: AuthProviders.Anonymous,
